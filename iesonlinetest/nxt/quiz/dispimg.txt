@@ -1,0 +1,19 @@
+<?php
+	function dispContent($filename, $maxversion){
+		$db_con = pg_connect("host = localhost dbname = sampledb user = postgres password = abc123AB") or die("Cant Find the db..!");
+		$query = "SELECT content from onlinetestquestionfile where filename = '$filename' AND version = 1";
+
+		$result = pg_query($db_con, $query);
+		if(pg_num_rows($result)){
+			while($row[] = pg_fetch_array($result));
+		}
+		$record = $row;
+		$cont[] = array_column($record, 'content');
+		$content = implode('.', $cont[0]);
+		header('Content-Type: image/jpg');
+		$unes_image = pg_unescape_bytea($content);
+		return $unes_image;
+		//return $content;
+	
+}
+?>

@@ -1,0 +1,187 @@
+.modalDialog {
+				position: fixed;
+				font-family: Arial, Helvetica, sans-serif;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0,0,0,0.8);
+				z-index: 99999;
+				opacity:0;
+				-webkit-transition: opacity 400ms ease-in;
+				-moz-transition: opacity 400ms ease-in;
+				transition: opacity 400ms ease-in;
+				pointer-events: none;
+			}
+
+			.modalDialog:target {
+				opacity:1;
+				pointer-events: auto;
+			}
+
+			.modalDialog > div {
+				width: 80%;
+				position: relative;
+				margin: 1% auto;
+				padding: 5px 20px 13px 20px;
+				border-radius: 10px;
+				background: #fff;
+				height: auto;
+				
+			}
+
+			.modalDialog > .innerDiv {
+				width: 70%;
+				position: relative;
+				margin: 3% auto;
+				margin-bottom: 0%;
+				padding: 25px 0px 13px 50px;
+				border-radius: 10px;
+				background: #fff;
+				height: 465px;
+				overflow-x: none;
+				overflow-y: scroll;
+				
+				
+			}
+
+			.modalDialog > .butDiv {
+				bottom:0;
+				display: flex;
+				width: 100%;
+				position: relative;
+				margin: 1% 0% 0% 0%;
+				padding: 20px 20px 13px 20px;
+				border-radius: 10px;
+				background: #fff;
+				height: 20px;
+				overflow-x: none;
+				overflow-y: none;
+				max-width: 97%; 
+				color: #FFFFFF;
+				height: 22px; 
+				width: 100%;
+				position:absolute;
+				
+				
+				
+			}
+
+			.close {
+				background: #606061;
+				color: #FFFFFF;
+				line-height: 25px;
+				position: inherit;
+				cursor: pointer;
+				right: -10px;
+				float: right;
+				text-align: center;
+				top: -10px;
+				width: 30px;
+				text-decoration: none;
+				font-weight: bold;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				border-radius: 12px;
+				-moz-box-shadow: 1px 1px 3px #000;
+				-webkit-box-shadow: 1px 1px 3px #000;
+				box-shadow: 1px 1px 3px #000;
+			}
+
+			.close:hover { background: #00d9ff; }
+
+			.subject-name{
+				height: 25px;
+				border-right: 1px solid #c3c3c1;
+				border-left: 1px solid #c3c3c1;
+				border-bottom: 1px solid #c3c3c1;
+				border-top: 1px solid #c3c3c1;
+				float: left;
+				font-size: 1em;
+				color:#36ace9;
+				background-color: #ffffff;
+				padding-left:12px;
+				padding-right:12px;
+				cursor:pointer;
+			}
+			.subject-name-visited {
+				height: 25px;
+				border-right: 1px solid #c3c3c1;
+				border-left: 1px solid #c3c3c1;
+				border-bottom: 1px solid #c3c3c1;
+				border-top: 1px solid #c3c3c1;
+				float: left;
+				font-size: 1em;
+				color:#ffffff;
+				background-color: #36ace9;
+				padding-left:12px;
+				padding-right:12px;
+				cursor:pointer;
+				
+			}
+			.subject-name:hover {
+				height: 25px;
+				border-right: 1px solid #c3c3c1;
+				border-left: 1px solid #c3c3c1;
+				border-bottom: 1px solid #c3c3c1;
+				border-top: 1px solid #c3c3c1;
+				float: left;
+				font-size: 1em;
+				color:#ffffff;
+				background-color: #00b9e1;
+				padding-left:12px;
+				padding-right:12px;
+				cursor:pointer;
+				
+			}
+			.btn {
+				border:1px solid #c8c8c8;
+				border-radius:2px;
+				cursor: pointer;
+				display: inline-block;
+				font-size: 1.2em;
+				font-weight: 400;
+				height:39px;
+				line-height:39px;
+					padding-left: 20px;
+				padding-right: 20px;
+				text-align: center;
+				vertical-align: middle;
+				white-space: nowrap;
+				margin-bottom:8px;
+				margin-top:8px;
+
+			}
+			.btn-primary-save {
+				background-color: #0c7cd5;
+				border-color: 1px solid #333;
+				color: #ffffff;
+			}
+			.btn-primary:hover {
+				background-color: #0c7cd5;
+				border-color: #0a68b4;
+				color: #ffffff;
+				
+			}
+			.btnCustom {
+				border:1px solid #c8c8c8;
+				border-radius:10px;
+				cursor: pointer;
+				display: inline-flex;
+				font-size: 1.2em;
+				font-weight: 400;
+				height:39px;
+				line-height:20px;
+			 	padding-left: 20px;
+			    padding-right: 20px;
+				text-align: center;
+				width: 100%;
+				margin-bottom:8px;
+				margin-top:-13px;
+			}
+			.butSpace{
+				position:relative;
+				margin-left:auto;
+				margin-right:auto;	
+				display:inline-flex;
+			}
